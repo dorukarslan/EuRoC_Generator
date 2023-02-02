@@ -35,16 +35,18 @@ Replace 'video_file_path' with the file path of your video recording and 'Andros
 
 The script performs the following steps:
 
-Converts the AndroSensor data into a CSV file in appropriate format
-Extracts timestamps from the sensor data file
-Splits the video recording into frames based on the extracted timestamps
-Organizes the timestamp data
-Creates the EuRoC MAV dataset using a shell script
+1. Converts the AndroSensor data into a CSV file in appropriate format
+2. Extracts timestamps from the sensor data file
+3. Splits the video recording into frames based on the extracted timestamps
+4. Organizes the timestamp data
+5. Creates the EuRoC MAV dataset using a shell script
 
 ## Note
 
 The script assumes that the required dependencies (AndroSensorConverter, frameSplitter, and timestampOrganizer) are located in the 'androsnsor', 'frameSplitter/frameSplitter', and 'timestampOrganizer' directories, respectively.
 The script uses a shell script named 'createDataset.sh' to create the final dataset. The shell script must be located in the same directory as the main script.
+
+I also want to thank Doğukan Terzi for his help and contribution.
 
 
 
